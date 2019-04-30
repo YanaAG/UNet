@@ -4,7 +4,7 @@
 Приложенная модель CP5.pth была натренирована на наборе данных формата .jpeg, состоящего из N сканированных изображений мозга.
 
 ## Краткие теоретические сведения
-![архитектура сети UNet](https://ai2-s2-public.s3.amazonaws.com/figures/2017-08-08/07045f87709d0b7b998794e9fa912c0aba912281/2-Figure1-1.png)
+![архитектура сети UNet](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/u-net-architecture.png)
 Рисунок 1. Архитектура U-net (пример изображения с разрешением 32×32 пикселя — самым низким)
 >
 Каждый синий квадрат соответствует многоканальной карте свойств. Количество каналов приведено в верхней части квадрата. Размер x-y приведен в нижнем левом краю квадрата. Белые квадраты представляют собой копии карты свойств. Стрелки обозначают различные операции.
@@ -55,29 +55,25 @@ This package depends on [pydensecrf](https://github.com/lucasb-eyer/pydensecrf),
 **Пример**
 >
 Исходное изображение:
+>
 ![source](https://i.imgur.com/ZQCFgQF.png)
 >
 Слои (down1-down4):
 >
-<img src="https://i.imgur.com/L6FTW5Y.png" width="200">
-<img src="https://i.imgur.com/m3GPMvF.png" width="200">
-<img src="https://i.imgur.com/7t8mHKI.png" width="200">
-<img src="https://i.imgur.com/YBSPJy3.png" width="200">
+<img src="https://i.imgur.com/L6FTW5Y.png" width="200"> <img src="https://i.imgur.com/m3GPMvF.png" width="200">
+<img src="https://i.imgur.com/7t8mHKI.png" width="200"> <img src="https://i.imgur.com/YBSPJy3.png" width="200">
 
 >
 Поднимаемся (Upsampling):
 >
-<img src="https://i.imgur.com/dBSCHWn.png" width="200">
-<img src="https://i.imgur.com/8QiDi6T.png" width="200">
-<img src="https://i.imgur.com/c3LcOVX.png" width="200">
-<img src="https://i.imgur.com/8cKhAyj.png" width="200">
+<img src="https://i.imgur.com/dBSCHWn.png" width="200"> <img src="https://i.imgur.com/8QiDi6T.png" width="200">
+<img src="https://i.imgur.com/c3LcOVX.png" width="200"> <img src="https://i.imgur.com/8cKhAyj.png" width="200">
 
 >
 
 inc/outc:
 >
-<img src="https://i.imgur.com/8cKhAyj.png" width="200">
-<img src="https://i.imgur.com/7leoOW8.png" width="200">
+<img src="https://i.imgur.com/8cKhAyj.png" width="200"> <img src="https://i.imgur.com/7leoOW8.png" width="200">
 
 >
 
@@ -114,21 +110,16 @@ inc/outc:
 >
 Слои (down1-down4):
 >
-<img src="https://i.imgur.com/pnMmZQi.png" width="200">
-<img src="https://i.imgur.com/ZyFUgAa.png" width="200">
-<img src="https://i.imgur.com/yZNHSrI.png" width="200">
-<img src="https://i.imgur.com/Jkim7Kg.png" width="200">
+<img src="https://i.imgur.com/pnMmZQi.png" width="200"> <img src="https://i.imgur.com/ZyFUgAa.png" width="200">
+<img src="https://i.imgur.com/yZNHSrI.png" width="200"> <img src="https://i.imgur.com/Jkim7Kg.png" width="200">
 
 >
 Upsampling:
 >
-<img src="https://i.imgur.com/2TXugY9.png" width="200">
-<img src="https://i.imgur.com/tvYqiXw.png" width="200">
-<img src="https://i.imgur.com/S8v78Nq.png" width="200">
-<img src="https://i.imgur.com/4uKO2DI.png" width="200">
+<img src="https://i.imgur.com/2TXugY9.png" width="200"> <img src="https://i.imgur.com/tvYqiXw.png" width="200">
+<img src="https://i.imgur.com/S8v78Nq.png" width="200"> <img src="https://i.imgur.com/4uKO2DI.png" width="200">
 
 >
 inc/outc:
 >
-<img src="https://i.imgur.com/JBo8wuO.png" width="200">
-<img src="https://i.imgur.com/48rJXcB.png" width="200">
+<img src="https://i.imgur.com/JBo8wuO.png" width="200"> <img src="https://i.imgur.com/48rJXcB.png" width="200">
