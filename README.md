@@ -1,7 +1,7 @@
 # Pytorch-UNet визуализация
 Реализация сети [U-Net](https://arxiv.org/pdf/1505.04597.pdf) взята с  [репозитория](https://github.com/milesial/Pytorch-UNet).
 
-Приложенная модель CP5.pth была натренирована на наборе данных формата .jpeg, состоящего из N сканированных изображений мозга.
+Приложенная модель [CP5.pth] (https://drive.google.com/open?id=1yk9yT0CiAYAhmjbA2EdYaZgEd2tbIVi9) была натренирована на наборе данных формата .jpeg, состоящего из N сканированных изображений мозга.
 
 ## Краткие теоретические сведения
 ![архитектура сети UNet](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/u-net-architecture.png)
